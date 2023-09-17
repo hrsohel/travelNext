@@ -9,7 +9,7 @@ const page = () => {
           style={{ textShadow: "0 0 1rem 2rem black" }}
           className="text-6xl capitalize font-bold text-white text-center"
         >
-          let's travel the world
+          let us travel the world
         </h1>
       </div>
       <Navbar />
