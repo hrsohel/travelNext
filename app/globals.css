@@ -1,0 +1,12 @@
+@import "font-awesome/css/font-awesome.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-main {
+background: url(../public/images/bg-for-desktop.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
