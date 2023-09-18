@@ -1,19 +1,25 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
+import FeatureLocaltion from "@/components/FeatureLocaltion";
+import AboutUs from "@/components/AboutUs";
+import Gallery from "@/components/Gallery";
+import Contact from "@/components/Contact";
 
 const page = () => {
   return (
-    <main className="home-main min-h-screen relative">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <h1
-          style={{ textShadow: "0 0 1rem 2rem black" }}
-          className="text-6xl capitalize font-bold text-white text-center"
-        >
-          let us travel the world
-        </h1>
-      </div>
-      <Navbar />
-      <div className="bg-white p-4 w-[80%] absolute bottom-0 left-1/2 -translate-x-1/2">
+    <>
+      <section className="home-main min-h-screen">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <h1
+            style={{ textShadow: "0 0 1rem 2rem black" }}
+            className="text-6xl uppercase font-bold text-white text-center"
+          >
+            let us travel the world
+          </h1>
+        </div>
+        <Navbar />
+      </section>
+      <div className="bg-white px-3 my-4 md:px-12">
         <div>
           <ul className="text-blue-600 flex items-center text-lg">
             <li className=" flex items-center justify-between">
@@ -26,7 +32,7 @@ const page = () => {
             </li>
           </ul>
         </div>
-        <form className="my-4 flex items-center justify-evenly flex-wrap">
+        <form className="my-4 flex items-center justify-between flex-wrap">
           <input
             type="text"
             className="my-2 p-1 text-lg border-[1px] border-black outline-none"
@@ -60,7 +66,11 @@ const page = () => {
           </span>
         </div>
       </div>
-    </main>
+      <FeatureLocaltion />
+      <AboutUs />
+      <Gallery />
+      <Contact />
+    </>
   );
 };
 

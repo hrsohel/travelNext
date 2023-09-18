@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <header className="flex items-center justify-between p-4">
+      <header className="flex items-center justify-between md:flex-none flex-wrap p-4">
         <div>
           <ul className="text-white flex items-center justify-between text-lg">
             <li className=" flex items-center justify-between">
@@ -16,7 +16,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="my-4 md:my-0">
           <ul className="flex items-center justify-around">
             <li className="border-2 border-white px-2 py-1 rounded-md text-white">
               Login
